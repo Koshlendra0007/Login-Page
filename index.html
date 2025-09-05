@@ -11,6 +11,26 @@
             margin: 0;
         }
 
+        .container {
+            width: 100%;
+            max-width: 100000px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        @media (max-width: 480px) {
+            .login-box {
+                width: 95%;
+                padding: 10px;
+            }
+        }
+
         div img {
             max-width: 100%;
             height: auto;
@@ -120,6 +140,7 @@
             top: -388px;
             filter: blur(100px);
         }
+
         .item5 button {
             background-color: black;
             width: 249px;
@@ -135,6 +156,7 @@
             top: -368px;
             filter: blur(100px);
         }
+
         .item6 button {
             background-color: rgba(127, 38, 91, 1);
             width: 130px;
@@ -150,31 +172,32 @@
             top: -313px;
             filter: blur(100px);
         }
-
     </style>
 </head>
 
 <body>
-    <div class="box">
-        <img src="Login-Page.png" alt="">
-    </div>
-    <div class="item1">
-        <button></button>
-    </div>
-    <div class="item2">
-        <button><input type="email" placeholder=""></button>
-    </div>
-    <div class="item3">
-        <button><input type="password" placeholder=""></button>
-    </div>
-    <div class="item4">
-        <button></button>
-    </div>
-    <div class="item5">
-        <button></button>
-    </div>
-    <div class="item6">
-        <button></button>
+    <div class="container">
+        <div class="box">
+            <img src="Login-Page.png" alt="">
+        </div>
+        <div class="item1">
+            <button></button>
+        </div>
+        <div class="item2">
+            <button><input type="email" placeholder=""></button>
+        </div>
+        <div class="item3">
+            <button><input type="password" placeholder=""></button>
+        </div>
+        <div class="item4">
+            <button></button>
+        </div>
+        <div class="item5">
+            <button></button>
+        </div>
+        <div class="item6">
+            <button></button>
+        </div>
     </div>
 </body>
 
